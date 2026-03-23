@@ -15,7 +15,7 @@ export default function ChartView({ chart }) {
     close: parseFloat(p.close),
   }))
 
-  const color = chart.config?.colors?.[0] ?? '#10b981'
+  const color = chart.config?.colors?.[0] ?? '#1344ad'
 
   return (
     <div className="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden">
@@ -45,7 +45,7 @@ export default function ChartView({ chart }) {
         {/* Análise — só aparece se tiver conteúdo */}
         {chart.analysis && (
           <div className="lg:w-80 border-t lg:border-t-0 lg:border-l border-zinc-800 p-5">
-            <p className="text-xs text-zinc-500 uppercase tracking-widest font-mono mb-3">Análise</p>
+            <p className="text-xs text-zinc-500 uppercase tracking-widest font-mono mb-3">Estudo</p>
             <div className="prose prose-sm prose-invert prose-zinc max-w-none">
               <AnalysisText text={chart.analysis} />
             </div>
@@ -113,7 +113,7 @@ function renderChart(type, data, color) {
           <XAxis dataKey="time" {...axisProps} />
           <YAxis {...axisProps} domain={['auto', 'auto']} />
           <Tooltip {...tooltipProps} />
-          <Line type="monotone" dataKey="close" stroke={color} strokeWidth={2} dot={false} activeDot={{ r: 4 }} />
+          <Line type="monotone" dataKey="close" stroke={color} strokeWidth={2} dot={false} activeDot={{ r: 2 }} />
         </LineChart>
       )
   }
@@ -143,7 +143,7 @@ function AnalysisText({ text }) {
         // Item de lista -
         if (line.startsWith('- ')) return (
           <div key={i} className="flex gap-2">
-            <span className="text-emerald-500 mt-0.5 flex-shrink-0">·</span>
+            <span className="text-blue-500 mt-0.5 flex-shrink-0">·</span>
             <span>{parseLine(line.slice(2))}</span>
           </div>
         )

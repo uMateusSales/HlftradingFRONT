@@ -21,17 +21,7 @@ export default function Header() {
   return (
     <>
       {/* ── Ticker tape ── */}
-      <div className="bg-[#0a1628] border-b border-cyan-900/30 py-1.5 overflow-hidden">
-        <div className="flex gap-8 whitespace-nowrap w-max"
-          style={{ animation: 'ticker 30s linear infinite' }}>
-          {[...TICKER_TAPE, ...TICKER_TAPE].map((t, i) => (
-            <span key={i} className="text-xs font-mono flex items-center gap-1.5">
-              <span className="text-cyan-400 font-semibold">{t.s}</span>
-              <span className={t.v.startsWith('+') ? 'text-emerald-400' : 'text-red-400'}>{t.v}</span>
-            </span>
-          ))}
-        </div>
-      </div>
+  
 
       {/* ── Navbar ── */}
       <header className="sticky top-0 z-50 bg-[#050a14]/95 backdrop-blur-md border-b border-white/5">
@@ -45,7 +35,7 @@ export default function Header() {
               </svg>
             </div>
             <span className="text-lg font-bold tracking-widest text-white group-hover:text-cyan-400 transition-colors">
-              HLF
+              HLFTrading
             </span>
           </Link>
 

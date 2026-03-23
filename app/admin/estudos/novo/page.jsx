@@ -11,7 +11,7 @@ const ASSET_CLASSES = [
   { value: 'FX',           label: 'Câmbio (Forex)' },
   { value: 'FIXED_INCOME', label: 'Renda Fixa' },
   { value: 'COMMODITY',    label: 'Commodities' },
-  { value: 'INDEX',        label: 'Índice' },
+  { value: 'INDEX',        label: 'Futuros' },
   { value: 'OTHER',        label: 'Outro' },
 ]
 

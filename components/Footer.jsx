@@ -24,21 +24,17 @@ export default function Footer() {
 
           {/* Links */}
           <nav className="flex items-center gap-6">
-            <Link href="/" className="text-xs text-zinc-600 hover:text-cyan-400 font-mono tracking-widest transition-colors">
-              INÍCIO
-            </Link>
-            <Link href="/#estudos" className="text-xs text-zinc-600 hover:text-cyan-400 font-mono tracking-widest transition-colors">
-              ESTUDOS
-            </Link>
-            <a href={`${API_URL}/api/auth/google`}
-              className="text-xs text-zinc-600 hover:text-cyan-400 font-mono tracking-widest transition-colors">
-              ÁREA DO TRADER
+            <a href="mailto:hlftrading.trading@gmail.com" className="text-xs text-zinc-600 hover:text-cyan-400 font-mono tracking-widest transition-colors">
+              Contato: hlftrading.trading@gmail.com
             </a>
+       
           </nav>
 
           {/* Aviso */}
           <p className="text-xs text-zinc-700 font-mono text-center md:text-right">
-            © {new Date().getFullYear()} HLF · Fins educacionais
+            © {new Date().getFullYear()} HLF · <p>A metodologia de estudo apresentada neste site, não tem como objetivo, a recomendação e/ou sugestão de compra e  venda de ativos. O site possui caráter meramente informativo e educativo, deste modo, não nos responsabilizamos  por qualquer decisão que o usuário venha a tomar a partir das informações contidas neste site. Cada usuário é  exclusivamente responsável por seus investimentos e negociações no mercado, sendo assim, este site não pode ser  responsabilizado por prejuízos decorrentes dos investimentos e negociações feito pelo usuário. 
+                                               A reprodução do conteúdo por parte do usuário é expressamente proibida.</p>
+
           </p>
 
         </div>

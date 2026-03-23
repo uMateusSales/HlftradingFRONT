@@ -67,22 +67,16 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-36">
           <div className="max-w-3xl">
 
-            <div className="inline-flex items-center gap-2 border border-cyan-500/30 bg-cyan-500/5 px-3 py-1 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"/>
-              <span className="text-xs text-cyan-400 font-mono tracking-widest">MERCADOS GLOBAIS</span>
-            </div>
-
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-none mb-4">
-              <span className="text-white">NEGOCIANDO</span>
+        
+            <h1 className="text-5xl md:text-6xl font-black tracking-tight leading-none mb-4">
+              <span className="text-white">Mercados Globais</span>
               <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-                MAIS INTELIGENTE
+                Plataforma de Estudo
               </span>
             </h1>
 
-            <p className="text-zinc-400 text-lg mb-10 max-w-lg leading-relaxed">
-              Análises técnicas com gráficos e estudos publicados por traders experientes.
-            </p>
+          
 
             {/* Search — filtra estudos reais do banco */}
             <div className="relative max-w-xl">
@@ -133,7 +127,7 @@ export default function HomePage() {
 
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p className="text-xs text-cyan-400 font-mono tracking-widest mb-2">// ANÁLISES PUBLICADAS</p>
+            <p className="text-xs text-cyan-400 font-mono tracking-widest mb-2">// ESTUDOS PUBLICADOS</p>
             <h2 className="text-2xl font-bold text-white">
               {search ? `Resultados para "${search.toUpperCase()}"` : 'Estudos Recentes'}
             </h2>
